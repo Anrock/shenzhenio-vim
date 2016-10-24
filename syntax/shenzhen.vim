@@ -4,7 +4,7 @@ endif
 
 syntax case ignore
 
-syntax keyword shenzhenKeyWord nop mov jmp slp slx add sub mul not dgt dst
+syntax keyword shenzhenKeyWord nop mov jmp slp slx add sub mul not dgt dst gen
 highlight link shenzhenKeyWord Statement
 
 syntax keyword shenzhenTest teq tgt tlt tcp
@@ -18,7 +18,7 @@ syntax match shenzhenLabel "\v\a+"
 highlight link shenzhenLabel Label
 
 syntax match shenzhenRegister "\v[xpXP][0-9]"
-syntax keyword shenzhenRegister acc dat
+syntax keyword shenzhenRegister acc dat null
 highligh link shenzhenRegister Identifier
 
 syntax match shenzhenComment "\v#.*$"
