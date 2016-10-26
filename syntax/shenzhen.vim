@@ -13,7 +13,7 @@ highlight link shenzhenTest Conditional
 syntax match shenzhenNumber "\v\d+"
 highlight link shenzhenNumber Number
 
-syntax match shenzhenLabel "\v^\a[\a\d_]*:"
+syntax match shenzhenLabel "\v^\s*\a[\a\d_]*:"
 syntax match shenzhenLabel "\v\a+"
 highlight link shenzhenLabel Label
 
